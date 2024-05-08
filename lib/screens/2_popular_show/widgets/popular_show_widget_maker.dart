@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:podcast/utils/assets/image_directions.dart';
 import 'package:podcast/utils/colors/text_colors.dart';
 import 'package:podcast/utils/extension/sized_box.dart';
 import 'package:podcast/utils/fonts/styles.dart';
@@ -30,8 +29,8 @@ class PopularShowWidget extends StatelessWidget {
           Row(
             children: [
               Container(
-                width: 90,
-                height: 70,
+                width: 90.w,
+                height: 70.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18.r),
                   image: DecorationImage(
@@ -47,9 +46,10 @@ class PopularShowWidget extends StatelessWidget {
                   Text(
                     podcastName,
                     style: GoogleFonts.openSans(
-                        color: TextColors.primaryColor,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16.sp),
+                      color: TextColors.primaryColor,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16.sp,
+                    ),
                   ),
                   Text(podcastType, style: AppTextStyles.mainBold),
                 ],
@@ -67,7 +67,7 @@ class PopularShowWidget extends StatelessWidget {
                 shape: BoxShape.circle,
                 border: Border.all(
                   color: Colors.white,
-                  width: 1,
+                  width: 1.w,
                 ),
               ),
               child: Image.asset('assets/icons/page_2/play.png'),

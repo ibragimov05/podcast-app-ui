@@ -66,6 +66,7 @@ flutter:
   assets:
     - assets/images/page_1/
     - assets/images/page_2/
+    - assets/images/page_3/
     - assets/icons/page_2/
 
   # An image asset can refer to one or more resolution-specific "variants", see

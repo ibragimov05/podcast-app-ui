@@ -3,36 +3,42 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:podcast/screens/3_subscribe/widgets/podcast_creators.dart';
 import 'package:podcast/utils/colors/text_colors.dart';
 import 'package:podcast/utils/extension/sized_box.dart';
+import 'package:podcast/utils/assets/image_directions.dart';
 
 class SubscribePage extends StatelessWidget {
   List<Map<String, dynamic>> podcastCreators_List = [
     {
-      'photoPath': '',
-      'podcastCreatorName': 'The Smith Comedy Show',
+      'photoPath': Assets.image1,
+      'podcastCreatorName': 'The Smith Comedy',
+      'podcastType': 'Show',
       'podcastAmount': 685,
       'isSelected': true,
     },
     {
-      'photoPath': '',
-      'podcastCreatorName': 'The Boy Who Flew Show',
+      'photoPath': Assets.image2,
+      'podcastCreatorName': 'The Boy Who Flew',
+      'podcastType': 'Show',
       'podcastAmount': 685,
       'isSelected': false,
     },
     {
-      'photoPath': '',
-      'podcastCreatorName': 'Community Best Show',
+      'photoPath': Assets.image3,
+      'podcastCreatorName': 'Community Best',
+      'podcastType': 'Show',
       'podcastAmount': 576,
       'isSelected': true,
     },
     {
-      'photoPath': '',
-      'podcastCreatorName': 'One Week Wonders Show',
+      'photoPath': Assets.image4,
+      'podcastCreatorName': 'One Week Wonders',
+      'podcastType': 'Show',
       'podcastAmount': 576,
       'isSelected': false,
     },
     {
-      'photoPath': '',
-      'podcastCreatorName': 'The Boy Who Lived',
+      'photoPath': Assets.image5,
+      'podcastCreatorName': 'The Boy Lived',
+      'podcastType': 'Show',
       'podcastAmount': 685,
       'isSelected': true,
     },
@@ -43,18 +49,18 @@ class SubscribePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF7F7F7),
+      backgroundColor: const Color(0xFFF7F7F7),
       appBar: AppBar(
-        backgroundColor: Color(0xFFF7F7F7),
+        backgroundColor: const Color(0xFFF7F7F7),
         leading: IconButton(
           onPressed: () => Navigator.of(context).pop(),
-          icon: Icon(Icons.arrow_back_ios_new_rounded),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
         ),
         title: Text(
           'Subscribe',
           style: TextStyle(
             fontWeight: FontWeight.w700,
-            color: Color(0xFF1B153B),
+            color: const Color(0xFF1B153B),
             fontSize: 16.sp,
           ),
         ),
@@ -65,15 +71,15 @@ class SubscribePage extends StatelessWidget {
               return [
                 PopupMenuItem(
                   onTap: () {},
-                  child: Text("Profile"),
+                  child: const Text("Profile"),
                 ),
                 PopupMenuItem(
                   onTap: () {},
-                  child: Text("Settings"),
+                  child: const Text("Settings"),
                 ),
                 PopupMenuItem(
                   onTap: () {},
-                  child: Text("Logout"),
+                  child: const Text("Logout"),
                 ),
               ];
             },
@@ -99,10 +105,10 @@ class SubscribePage extends StatelessWidget {
                     PodcastCreator(
                       photoPath: each['photoPath'],
                       podcastCreatorName: each['podcastCreatorName'],
+                      podcastType: each['podcastType'],
                       podcastAmount: each['podcastAmount'],
                       isSelected: each['isSelected'],
                     )
-
                 ],
               )
             ],

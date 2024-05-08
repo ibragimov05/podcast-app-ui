@@ -32,30 +32,29 @@ class PopularShow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF7F7F7),
+      backgroundColor: const Color(0xFFF7F7F7),
 
       /// app bar
       appBar: AppBar(
         surfaceTintColor: Colors.transparent,
-        // foregroundColor: Colors.transparent,
-        backgroundColor: Color(0xFFF7F7F7),
+        backgroundColor: const Color(0xFFF7F7F7),
         title: Text(
           'Popular Show',
           style: TextStyle(
             fontWeight: FontWeight.w700,
-            color: Color(0xFF1B153B),
+            color: const Color(0xFF1B153B),
             fontSize: 16.sp,
           ),
         ),
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_rounded),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
           ),
         ],
       ),
@@ -71,7 +70,7 @@ class PopularShow extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.yellow,
                   borderRadius: BorderRadius.circular(40.r),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                     image: AssetImage(
                       Assets.imagePodcastBackground,
                     ),
@@ -88,12 +87,12 @@ class PopularShow extends StatelessWidget {
                       boxShadow: [
                         BoxShadow(
                           blurStyle: BlurStyle.outer,
-                          spreadRadius: 10,
-                          blurRadius: 50,
+                          spreadRadius: 10.r,
+                          blurRadius: 50.r,
                         ),
                       ],
                     ),
-                    child: Icon(Icons.play_arrow_rounded),
+                    child: const Icon(Icons.play_arrow_rounded),
                   ),
                 ),
               ),
@@ -122,7 +121,7 @@ class PopularShow extends StatelessWidget {
                     '12 Popular show',
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
-                      color: Color(0xFF1B153B),
+                      color: const Color(0xFF1B153B),
                       fontSize: 18.sp,
                     ),
                   ),
@@ -152,7 +151,7 @@ class PopularShow extends StatelessWidget {
         ),
         child: BottomNavigationBar(
           showSelectedLabels: false,
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: IconMaker(icoPath: Assets.iconHome),
               label: '',

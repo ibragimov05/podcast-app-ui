@@ -18,7 +18,11 @@ class MainPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(
-              top: 40.0.h, bottom: 20.0.h, left: 30.w, right: 30.w),
+            top: 40.0.h,
+            bottom: 20.0.h,
+            left: 30.w,
+            right: 30.w,
+          ),
           child: Column(
             children: [
               Container(
@@ -30,7 +34,7 @@ class MainPage extends StatelessWidget {
                       topLeft: Radius.circular(30.r),
                       bottomLeft: Radius.circular(30.r),
                       bottomRight: Radius.circular(100.r)),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                     image: AssetImage(
                       Assets.imageGroot,
                     ),
@@ -49,11 +53,11 @@ class MainPage extends StatelessWidget {
                         decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0xff7d6bea),
-                              blurRadius: 20,
+                              color: const Color(0xff7d6bea),
+                              blurRadius: 20.r,
                             ),
                           ],
-                          color: Color(0xff7d6bea),
+                          color: const Color(0xff7d6bea),
                           shape: BoxShape.circle,
                         ),
                         child: Center(
@@ -101,9 +105,8 @@ class MainPage extends StatelessWidget {
                 child: Ink(
                   width: double.infinity,
                   height: 65.w,
-                  // padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Color(0xff7d6bea),
+                    color: const Color(0xff7d6bea),
                     borderRadius: BorderRadius.circular(25.r),
                   ),
                   child: Center(
@@ -125,7 +128,7 @@ class MainPage extends StatelessWidget {
                   'Sign up',
                   style: TextStyle(
                     fontSize: 16.sp,
-                    color: Color(0xFF7d6bea),
+                    color: const Color(0xFF7d6bea),
                     fontWeight: FontWeight.w800,
                   ),
                 ),

@@ -4,7 +4,7 @@ import 'package:podcast/screens/1_main_page/main_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
@@ -15,7 +15,7 @@ class App extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(360, 800),
       builder: (context, child) {
-        return MaterialApp(
+        return const MaterialApp(
           debugShowCheckedModeBanner: false,
           home: MainPage(),
         );

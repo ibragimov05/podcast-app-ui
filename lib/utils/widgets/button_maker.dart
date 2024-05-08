@@ -40,7 +40,7 @@ class ButtonMaker extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(14.r),
           color: isSelected == true
-              ? Color(0xff7d6bea)
+              ? const Color(0xff7d6bea)
               : Colors.grey.withOpacity(0.15),
         ),
         child: Text(
